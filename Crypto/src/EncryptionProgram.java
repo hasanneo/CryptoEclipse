@@ -10,7 +10,7 @@ import javax.swing.*;
 public class EncryptionProgram {
 	static BigInteger p;
 	static BigInteger g;
-	static JFrame frame = new JFrame("Bitch project");
+	static JFrame frame = new JFrame("TEA");
 	static JTabbedPane tabbedPane = new JTabbedPane();
 	static SingleSelectionModel selectionModel = tabbedPane.getModel();
 	static JPanel alicePanel;
