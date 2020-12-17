@@ -128,14 +128,16 @@ public class TEA {
 		}
 		return dest;
 	}
-/*
+
 	// Simple usage example //
 	//public static String quote = "Now rise, and show your strength. Be eloquent, and deep, and tender; see, with a clear eye, into Nature, and into life:  spread your white wings of quivering thought, and soar, a god-like spirit, over the whirling world beneath you, up through long lanes of flaming stars to the gates of eternity!";
 	public static String quote="What is going on here";
 	public static void main(String[] args) {
 		//Create a cipher using the first 16 bytes of the pass phrase 
-		String publicKey="And is there honey still for tea?";
-		TEA tea = new TEA(publicKey.getBytes());
+		String teaKey="And is there honey still for tea?";
+		byte[] teaTestKey=teaKey.getBytes();
+		byte[] teaByte= {0, -77, 126, 41, -86, 6, 9, -79, 68, -27, 50, 119, 24, -84, -122, 14, -28, -116, -128, 103, 113, -60, -93, 44, -51, 59, 13, 8, 78, -67, -84, 77, -62, 58, 32, 82, -9, -93, 98, 52, 5, 88, -89, 118, -97, 64, 92, 75, -42, -38, 105, -51, -9, -104, 109, 31, -69, -114, 19, 36, -96, -79, -3, 121, -11};
+		TEA tea = new TEA(teaByte);
 
 		byte[] original = quote.getBytes();
 
@@ -151,6 +153,5 @@ public class TEA {
 		System.out.println("Encryption:"+encryptionResult);
 		System.out.println("Decryption:"+decriptionResult);
 		
-		
-	}*/
+	}
 }

@@ -12,7 +12,9 @@ public class SignatureRSA {
 	public CryptoHash getHashFunction() {
 		return hashFunction;
 	}
-
+	public SignatureRSA() {
+		
+	}
 	/**
 	 * Creating an object for the RSA signature
 	 * 

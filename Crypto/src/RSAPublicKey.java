@@ -19,4 +19,9 @@ public class RSAPublicKey {
     public BigInteger getR() {
         return r;
     }
+    @Override
+    	public String toString() {
+    		// TODO Auto-generated method stub
+    		return "E:"+e.toString()+"\nR:"+r.toString();
+    	}
 }
